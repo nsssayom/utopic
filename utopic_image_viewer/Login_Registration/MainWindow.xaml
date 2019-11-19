@@ -1,0 +1,34 @@
+﻿<Window x:Class="Login_Registration.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Login_Registration"
+        mc:Ignorable="d"
+        Title="Utopic" Height="450" Width="800" Loaded="Window_Loaded" >
+    <Grid Height="419" VerticalAlignment="Top">
+        <GridSplitter HorizontalAlignment="Center" Height="419" Margin="393,0" VerticalAlignment="Center" Width="6"/>
+        <Grid HorizontalAlignment="Left" Height="399" Margin="10,10,0,0" VerticalAlignment="Center" Width="383">
+            <Image HorizontalAlignment="Left" Height="100"  VerticalAlignment="Top" Width="100" Margin="141.5,20,0,0" Source="images/add-512.png"/>
+            <TextBox Name="usernameBox" HorizontalAlignment="Left" Height="23" Margin="151,140,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="174" FontSize="14"/>
+            <Label Content="Username" Margin="50,138,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.316,0.462" HorizontalAlignment="Left" Width="79" FontSize="14"/>
+            <PasswordBox Name="passwordBox" HorizontalAlignment="Left" Height="23" Margin="151,182,0,0" VerticalAlignment="Top" Width="174" FontSize="14"/>
+            <Label Content="password" Margin="50,180,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.316,0.462" HorizontalAlignment="Left" Width="79" FontSize="14"/>
+            <TextBox Name="emailBox" HorizontalAlignment="Left" Height="23" Margin="151,223,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="174" FontSize="14"/>
+            <Label Content="E-mail" Margin="50,221,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.316,0.462" HorizontalAlignment="Left" Width="79" FontSize="14"/>
+            <TextBox Name="phoneBox" HorizontalAlignment="Left" Height="23" Margin="151,262,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="174" FontSize="14"/>
+            <Label Content="Phone" Margin="50,260,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.316,0.462" HorizontalAlignment="Left" Width="79" FontSize="14"/>
+            <Button Name="signupBtn" Content="Sign Up" HorizontalAlignment="Left" Margin="250,312,0,0" VerticalAlignment="Top" Width="75" Background="#FF029FEE" Foreground="#FF333333" Height="29" FontSize="14" Click="signupBtn_Click"/>
+        </Grid>
+        <Grid HorizontalAlignment="Left" Height="399" Margin="399,10,0,0" VerticalAlignment="Top" Width="383">
+            <Image HorizontalAlignment="Left" Height="100"  VerticalAlignment="Top" Width="100" Margin="142,61,0,0" Source="images/login-512.png"/>
+            <TextBox x:Name="usernameBox_login" HorizontalAlignment="Left" Height="23" Margin="151,186,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="174" FontSize="14"/>
+            <Label Content="Username" Margin="50,184,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.316,0.462" HorizontalAlignment="Left" Width="79" FontSize="14"/>
+            <PasswordBox x:Name="passwordBox_login" HorizontalAlignment="Left" Height="23" Margin="151,228,0,0" VerticalAlignment="Top" Width="174" FontSize="14"/>
+            <Label Content="password" Margin="50,226,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.316,0.462" HorizontalAlignment="Left" Width="79" FontSize="14"/>
+            <Button Name="loginBtn" Content="Login" HorizontalAlignment="Left" Margin="250,273,0,0" VerticalAlignment="Top" Width="75" Background="#FF029FEE" Foreground="#FF333333" Height="29" FontSize="14" Click="loginBtn_Click"/>
+        </Grid>
+
+
+    </Grid>
+</Window>
